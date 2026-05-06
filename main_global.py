@@ -82,7 +82,7 @@ def load_weights_safely(model: torch.nn.Module, weight_path: str, strict: bool =
     return ckpt
 
 
-# ---------------- Pose Loss (沿用你原来的 ROI Loss) ----------------
+# ---------------- Pose Loss  ----------------
 class PoseROILoss(torch.nn.Module):
     def __init__(self, w_cls=1.0, w_center=1.0, w_normal=1.0, smoothl1_beta=1.0):
         super().__init__()
